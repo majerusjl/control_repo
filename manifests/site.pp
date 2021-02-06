@@ -1,7 +1,5 @@
 node default {
-  file {'/root/README':
-    ensure  => file,
-    content => 'This is a majerus README',
-    owner   => 'root',
-  }
+}
+node 'centos7-1.localnet.com' {
+  include role::master_server
 }
